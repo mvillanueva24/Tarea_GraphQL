@@ -1,0 +1,12 @@
+type Person {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    age: Int!
+    email: String!
+}
+
+type Query {
+    people: [Person!]!
+    peopleByAgeRange(minAge: Int!, maxAge: Int!): [Person!]!
+}
